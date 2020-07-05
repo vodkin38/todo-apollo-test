@@ -1,0 +1,62 @@
+$elementHeight: 30px;
+$removeBtnPath: '../../assets/img/remove.png';
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+
+  .todo-text-container {
+    flex: 5;
+    position:relative;
+    display: inline-block;
+    height: $elementHeight;
+    cursor: pointer;
+    padding: 0 5px;
+    overflow: hidden;
+    text-align: left;
+    .todo-text {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: $elementHeight;
+      line-height: $elementHeight;
+      
+    }
+  }
+
+  .todo-buttons {
+    flex: 1;
+    .todo-button {
+      width: 30px;
+      height: 30px;
+      background-image: url($removeBtnPath);
+      background-size: cover;
+      cursor: pointer;
+      &,
+      &:focus,
+      &:active {
+        outline: none;
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+
+  .todo-completed-stroke {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background-color: #911c2b;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 0.3s ease-in;
+  }
+
+  &.completed .todo-completed-stroke {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  text-align:center;
+  margin: 20px 0;
+  .todo-list-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    min-height: 140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 2px solid #c8cacf;
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #d5dbe3;
+}
+
+code {
+  font-family: 'Arial', 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Overpass', 'sans-serif', 'Arial', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
