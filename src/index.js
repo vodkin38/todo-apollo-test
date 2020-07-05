@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink} from '@apollo/client';
-import resolvers from './gql/resolvers';
+//import resolvers from './gql/resolvers';
 import App from './App';
 import './index.scss';
 
 const cache = new InMemoryCache();
-const stateLink = withClientState({
-  cache,
-  resolvers
-});
 const link = new HttpLink({
   uri: 'http://localhost:3005/graphql',
 })
